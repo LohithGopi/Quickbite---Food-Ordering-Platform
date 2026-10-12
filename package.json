@@ -1,0 +1,14 @@
+{
+  "name": "quickbite-root",
+  "version": "1.0.0",
+  "description": "Full-stack food ordering app root package",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\" \"npm run dev --prefix admin\""
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
